@@ -1,3 +1,5 @@
+
+
 import random
 
 name = input("Could you please type your name?\n")
@@ -13,7 +15,7 @@ else:
 
 cuisine = ("Italian","Arabic","Chinese")
 if decision == "y":
-    print(cuisine[figure])
+    print(f"Ok you will get something {cuisine[figure]}")
 
 fruits = ("pear","apple","lichi","mango")
 
@@ -36,9 +38,3 @@ if tip == "y":
     print (f"You have to pay {bill} PLN")
 elif tip == "n":
     print(f"Thanks for the tip. You need to pay {bill_with_tip}")
-
-
-
-
-
-   
