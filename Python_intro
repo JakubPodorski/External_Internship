@@ -18,7 +18,7 @@ if decision == "y":
 fruits = ("pear","apple","lichi","mango")
 
          
-number_of_fruit = int(input("how many fruit\n"))
+number_of_fruit = int(input("How many fruit would you like to get for the dish\n"))
 
 fruits_to_be_used = []
 for fruit in range(number_of_fruit):
