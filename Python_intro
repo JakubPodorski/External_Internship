@@ -2,14 +2,14 @@ import random
 
 name = input("Could you please type your name?\n")
 print(f"Dear {name} Welcome to Food Generator")
-decision = input("Shall we help you with random food selection.Please type Y if yes and N for non\n")
+decision = input("Shall we help you with random food selection.Please type y if yes and n for non\n")
 
 if decision =="y":
     figure = int(input("Great, choose cuisine 0 for Italian, 1 for Arabic 2 for Chinese\n"))
 elif decision == "n":
     print("Surely we understand maybe we can help you next time")
 else:
-    print("you didn't choose correct element")
+    print("you didn't type correct letter : y or n")
 
 cuisine = ("Italian","Arabic","Chinese")
 if decision == "y":
