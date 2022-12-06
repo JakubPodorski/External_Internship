@@ -1,1 +1,44 @@
-test
+import random
+
+name = input("Could you please type your name?\n")
+print(f"Dear {name} Welcome to Food Generator")
+decision = input("Shall we help you with random food selection.Please type Y if yes and N for non\n")
+
+if decision =="y":
+    figure = int(input("Great, choose cuisine 0 for Italian, 1 for Arabic 2 for Chinese\n"))
+elif decision == "n":
+    print("Surely we understand maybe we can help you next time")
+else:
+    print("you didn't choose correct element")
+
+cuisine = ("Italian","Arabic","Chinese")
+if decision == "y":
+    print(cuisine[figure])
+
+fruits = ("pear","apple","lichi","mango")
+
+         
+number_of_fruit = int(input("how many fruit\n"))
+
+fruits_to_be_used = []
+for fruit in range(number_of_fruit):
+    fruits_to_be_used.append(random.choice(fruits))
+print(f"Great you will receive {fruits_to_be_used} for your {cuisine[figure]} dish")
+
+print("Now it is time for payment")
+
+bill = random.randint(1,100)
+def bill_with_tip():
+    return bill*1.2
+
+tip = input("Would you like to add tip.Please type y for tip and n for lack of tip\n")
+if tip == "y":
+    print (f"You have to pay {bill} PLN")
+elif tip == "n":
+    print(f"Thanks for the tip. You need to pay {bill_with_tip}")
+
+
+
+
+
+   
